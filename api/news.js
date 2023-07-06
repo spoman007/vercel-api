@@ -34,7 +34,7 @@ async function getRepositories({ language = '' }) {
       listItem: 'article',
       data: {
         title: {
-          selector: 'h1',
+          selector: 'h2',
           convert: (x) => x.split('\n').join('').replace(/\s/g, ''),
         },
         link: {
